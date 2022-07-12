@@ -1,6 +1,6 @@
 ---
-layout: categories
-title: Categories
+layout: mocap
+title: Mocap
 icon: fas fa-stream
 order: 1
 ---

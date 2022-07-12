@@ -1,6 +1,6 @@
 ---
-layout: tags
-title: Tags
+layout: modelos
+title: Modelos
 icon: fas fa-tag
 order: 2
 ---

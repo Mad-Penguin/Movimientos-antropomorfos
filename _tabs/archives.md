@@ -1,6 +1,6 @@
 ---
-layout: archives
-title: Archives
+layout: aplicaciones
+title: Aplicaciones
 icon: fas fa-archive
 order: 3
 ---
