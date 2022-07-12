@@ -1,5 +1,5 @@
 ---
 title: Modelos
-icon: fas fa-tag
+icon: fa-solid fa-user-large
 order: 2
 ---

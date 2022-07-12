@@ -1,6 +1,6 @@
 ---
 title: Aplicaciones
-icon: fas fa-archive
+icon: fa-solid fa-desktop
 order: 3
 ---
 

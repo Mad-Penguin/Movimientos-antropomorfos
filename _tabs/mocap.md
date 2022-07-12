@@ -1,5 +1,5 @@
 ---
 title: Mocap
-icon: fas fa-stream
+icon: fa-solid fa-camera
 order: 1
 ---
