@@ -10,7 +10,7 @@ baseurl: '/Movimientos-antropomorfos'
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: es-ES
 
 # Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
 prefer_datetime_locale:
@@ -23,7 +23,7 @@ timezone:
 
 title: Movimientos antropomorfos # the main title
 
-tagline:    # it will display as the sub-title
+tagline: Verano UG   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Descripción del uso de mocap y la modelación de movimientos antropomorfos
@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: 
+avatar: '/assets/images/UG.png'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
