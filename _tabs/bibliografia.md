@@ -4,5 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Parent, R. (2012). _Computer Animation: Algorithms and Techniques_ (3rd ed.). Morgan Kaufmann Publishers.
+
+Menache, A. (2010). _Understanding Motion Capture for Computer Animation;Morgan Kaufmann Series in Computer Graphics_ (2nd ed.). Morgan Kaufmann Publishers.
