@@ -60,3 +60,4 @@ polyfill:
 
 mathjax:
   js: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  js: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML
