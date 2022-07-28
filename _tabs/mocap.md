@@ -64,12 +64,16 @@ $$f = \sum_{i = 1}^m Q_i.$$
 Esto aún genera un problema. ¿Por qué? La métrica original no incentiva el poner una cámara en una región que no contenga ninguna cámara: al pasar de 0 cámaras a 1 cámara en la región, esta región sigue sin contener al menos un par de cámaras, así que su longitud se sigue considerando. Más aún, este cambio empeora la métrica si la región de la cual se toma la cámara a mover contiene sólo un par de cámaras.
 
 Para esto definimos $\theta$ como un ***penalty***  asignado a puntos que no son visibles por un par de cámaras. Consideremos un punto $p_i$, y $C_i$ como el conjunto de puntos cuyos vectores de vista ven a $p_i$. Entonces, definimos el valor $E_i$ como la nueva métrica, dada por:
+
 $$E_i = \begin{cases}
 360 + \theta & |C_i| = 0\\
 Q_i & |C_i| > 0.
 \end{cases}$$
+
  Finalmente, queremos minimizar $f$, redefinida como
+
 $$f = \sum_{i=1}^m E_i,$$
+
 usando recocido simulado. El paper original sugiere usar $\theta = 360$ para obtener mejores resultados.
 
 
