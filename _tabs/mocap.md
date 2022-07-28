@@ -14,7 +14,7 @@ Cómo parte del proyecto, consultamos el paper Optimal Camera Placement for Moti
 
 La **métrica de error basada en oclusión** presenta una forma de medir la visibilidad de un punto objetivo específico por al menos dos cámaras, para un conjunto de cámaras, cuando se presenta oclusión dinámica.
 
-Para tomar en cuenta la gran mayoría de oclusores posibles, se considera un plano vertical que gira alrededor del punto objetivo. Así, entre todos todos los ángulos entre \\(0\\)° y \\(360\\)° que puede girar este plano respecto al punto, habrá ciertos intervalos de ángulos en los cuáles el punto no es visible por al menos dos cámaras. La métrica calcula la suma de las longitudes de estos intervalos. Informalmente, esta corresponde a la "suma de ángulos" en los cuáles no es visible el punto objetivo, y nos interesa minimizar esta cantidad.
+Para tomar en cuenta la gran mayoría de oclusores posibles, se considera un plano vertical que gira alrededor del punto objetivo. Así, entre todos todos los ángulos entre \(0\)° y \\(360\\)° que puede girar este plano respecto al punto, habrá ciertos intervalos de ángulos en los cuáles el punto no es visible por al menos dos cámaras. La métrica calcula la suma de las longitudes de estos intervalos. Informalmente, esta corresponde a la "suma de ángulos" en los cuáles no es visible el punto objetivo, y nos interesa minimizar esta cantidad.
  
 ![Oclusion](/assets/images/oclusion.png)
 
