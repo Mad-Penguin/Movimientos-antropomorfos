@@ -2,7 +2,6 @@
 title: Mocap
 icon: fa-solid fa-camera
 order: 1
-math: true
 ---
 
 # Posicionamiento de cámaras
@@ -77,6 +76,75 @@ $$f = \sum_{i=1}^m E_i,$$
 
 usando recocido simulado. El paper original sugiere usar $\theta = 360$ para obtener mejores resultados.
 
+# El sistema de Motion Capture en CIMAT -  Guía de uso
+
+El procedimiento anterior, aunque interesante en teoría, no es aplicado en CIMAT en la actualidad.
+Para el sistema de CIMAT, se cuenta con la siguiente guía:
+
+## Calibración
+
+Se utiliza el software Motion, de Optitrack; a través de este se hará la calibración.
+
+### Preparar el ambiente
+
+Se deben bloquear o remover los objetos que puedan interferir con las cámaras; ya sea ventanas abiertas, superficies reflejantes, luces infrarojas, marcadores, etc.
+ 
+ ### Camera Masking
+ Se cubren las fuentes de luz restantes; incluyendo la interferencia de las cámaras entre sí. Esto se puede hacer con la opción de Auto-Masking, "Block-Visible". Esta esconde de manera automática los puntos brillantes. Otra opción es cubrirlas manualmente con herramientas de selección.
+
+### Wanding
+Se debe presionar el botón "Start Wanding"; el motor de calibración comenzará a grabar samples cuando detecte la varita de calibración. Se debe cubrir con los marcadores de la varita todo el volumen que detecten las cámaras. El motor de calibración se mostrará verde cuando tenga suficientes samples. Es recomendable seguir el proceso hasta cubrir suficiente área.
+
+### Calculation
+Tras hacer el "Wanding", el proceso de cálculo se hace presionando el botón "Calculate" del panel "Calibration". Solo es necesario esperar a que el proceso converja a una solución, pero se puede dejar continuar para obtener calibración más precisa.  Se puede monitorear el proceso con el visor 3D, que se ve como sigue:
+
+### Aplicar los resultados
+
+Solo es necesario presionar el botón “Apply Results”. Saldrá un aviso de guardar los resultados del “Wanding”. Tras guardar, es posible escoger el plano del suelo con el artefacto que determina el plano Z.
+
+### Verificar los resultados
+
+Ejecutar la herramienta "Volume Accuracy Tool" para verificar la calidad de la calibración. Se mide la desviación entre las longitudes que se midieron y las reales de la varita de calibración.
+
+## Sesión de Grabación
+
+### Suit Up
+Ponerse el traje de la talla adecuada, lo más ajustado posible; esto previene que los marcadores se muevan mucho respecto al cuerpo. 
+
+Los marcadores se deben colocar en lugares específicos (Marker Sets). El estándar, "Baseline" consiste en 37 marcadores y se puede ver en "Views"->"Sekeletons"->"Choose Markerset".
+
+### Definir un esqueleto
+Hacer clic en "Layout"->"Create". El actor para el cual se vaya a definir el esqueleto se debe colocar en el centro del volumen de grabación con los marcadores de el Marker Set adecuado.
+
+El actor se debe colocar en "posición T" frente a las cámaras, y se mostrará un modelo cuando el actor este en la posición correcta.
+
+### Grabar datos
+Tras calibrar y definir esqueletos, seleccionamos "Layout"-> "Capture" para acceder a las opciones de grabación.  Seleccionar el botón rojo de grabación y comenzar a capturar los datos 3D.
+
+El panel de timeline funciona de manera similar que un software de grabación de audio o una cámara de video. Con el botón comenzamos a grabar en una nueva toma. El panel (botón de comenzar a grabar, detener, etc) es similar a cualquier otro software de grabación.
+
+ En la sección “Take” se da el nombre a la toma. También se muestra información como el tiempo grabado, la latencia y los "frames per second".
+  
+  Si el esqueleto pierde la forma, se puede calibrar posicionandose de nuevo en posición de T.
+
+## Sesión de Edición
+Abrir un proyecto existente y seleccionar  "Layout"->"Edit". Escoger alguna toma ("Takes") para obtener la información de marcadores de esta.
+
+  En el panel "Project", la sección "Assets" muestra los esqueletos y cuerpos rígidos de la toma. Al seleccionar algún esqueleto, encontramos sus marcadores, y se pueden seleccionar para Editar.
+  
+### Eliminar marcadores de ruido
+
+Para cada esqueleto y cuerpo rígido se deben eliminar los marcadores que aparezcan como "Undefined".
+  
+### Seleccionar animación deseada
+
+En el editor de "timeline" se selecciona la sección de grabación para trabajar, como se ve en la imagen:
+
+### Fill gaps
+
+Seleccionamos marcadores con "gaps" (huecos) en sus gráficas; estos se van a llenar escogiendo con alguna interpolación.
+
+Esto se puede hacer en “Fill Gaps” del panel “Edit Tools”.  Seleccionamos el tamaño máximo de los gaps que llenaremos con una interpolación, así como el tipo de interpolación a usar (ej. Max. Gap Size = 10) que utilizaremos (ej. Interpolation = Cubic). Con la opción “Fill Selected” se llenan los gaps seleccionados.
 
 
 
