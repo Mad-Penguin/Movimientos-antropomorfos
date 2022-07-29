@@ -98,7 +98,7 @@ Se utiliza el software Motion, de Optitrack; a través de este se hará la calib
 
 Se deben bloquear o remover los objetos que puedan interferir con las cámaras; ya sea ventanas abiertas, superficies reflejantes, luces infrarojas, marcadores, etc.
  
- ### Camera Masking
+### Camera Masking
 
  Se cubren las fuentes de luz restantes; incluyendo la interferencia de las cámaras entre sí. Esto se puede hacer con la opción de Auto-Masking, "Block-Visible". Esta esconde de manera automática los puntos brillantes. Otra opción es cubrirlas manualmente con herramientas de selección.
 
