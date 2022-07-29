@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://mad-penguin.github.io/Movimientos-antropomorfos/sitemap.xml
