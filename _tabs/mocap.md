@@ -5,6 +5,14 @@ order: 1
 math: true
 ---
 
+La captura de movimiento (**mocap** abreviado del inglés motion capture) es el proceso de grabar el movimiento de un objeto o personas para generar un modelo 3D que pueda ser ejecutado por la computadora, estos son clasificados en outside-in, inside-out e inside-in dependiendo de las fuentes de captura y de donde son puestos los sensores o marcadores. 
+
+- Los sistemas outside-in usan sensores externos para capturar los datos de fuentes colocadas en partes del cuerpo, un ejemplo de esto son los dispositivos de rastreo basados en cámaras en el que las cámaras son los sensores y los marcadores reflectantes son las fuentes 
+- Los sistemas inside-out son sensores que se ponen en el cuerpo que recolectan fuentes externas, un ejemplo de esto son sistemas electromagnéticos cuyos sensores se mueven en un campo electromagnético generado externamente 
+- Los sistemas inside-in tienen tantos los sensores como las fuentes en el cuerpo.
+
+Los sistemas ópticos de captura de movimiento son un método muy preciso para capturar ciertos movimientos, es un sistema basado en una computadora que controla la entrada de las cámaras, las cuales son sensibles a la luz para crear las representaciones digitales. Este es el sistema con el que cuenta la universidad del cual se hablara más adelante, primero hay que tratar con el problema del posicionamiento de las cámaras.
+
 # Posicionamiento de cámaras
 
 Un problema que surge comúnmente en la captura de movimiento es el posicionamiento adecuado de las cámaras. Para saber las coordenadas de un punto de interés, es necesario que este sea visto por al menos dos cámaras (o más, dependiendo del sistema). Así, es de interés poder calcular las posiciones que maximicen la visibilidad de puntos. 
