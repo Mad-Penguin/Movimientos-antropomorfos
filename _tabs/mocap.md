@@ -9,7 +9,7 @@ La captura de movimiento (**mocap** abreviado del inglés motion capture) es el 
 
 - Los sistemas outside-in usan sensores externos para capturar los datos de fuentes colocadas en partes del cuerpo, un ejemplo de esto son los dispositivos de rastreo basados en cámaras en el que las cámaras son los sensores y los marcadores reflectantes son las fuentes 
 - Los sistemas inside-out son sensores que se ponen en el cuerpo que recolectan fuentes externas, un ejemplo de esto son sistemas electromagnéticos cuyos sensores se mueven en un campo electromagnético generado externamente 
-- Los sistemas inside-in tienen tantos los sensores como las fuentes en el cuerpo.
+- Los sistemas inside-in tienen tanto los sensores como las fuentes en el cuerpo.
 
 Los sistemas ópticos de captura de movimiento son un método muy preciso para capturar ciertos movimientos, es un sistema basado en una computadora que controla la entrada de las cámaras, las cuales son sensibles a la luz para crear las representaciones digitales. Este es el sistema con el que cuenta la universidad del cual se hablara más adelante, primero hay que tratar con el problema del posicionamiento de las cámaras.
 
@@ -99,6 +99,7 @@ Se utiliza el software Motion, de Optitrack; a través de este se hará la calib
 Se deben bloquear o remover los objetos que puedan interferir con las cámaras; ya sea ventanas abiertas, superficies reflejantes, luces infrarojas, marcadores, etc.
  
  ### Camera Masking
+
  Se cubren las fuentes de luz restantes; incluyendo la interferencia de las cámaras entre sí. Esto se puede hacer con la opción de Auto-Masking, "Block-Visible". Esta esconde de manera automática los puntos brillantes. Otra opción es cubrirlas manualmente con herramientas de selección.
 
 ![Masking antes 1](/assets/images/mask1.png)
